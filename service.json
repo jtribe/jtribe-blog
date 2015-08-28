@@ -1,0 +1,11 @@
+{
+  "ghostrunner-blog": {
+    "description": "ghostrunner service",
+    "scripts": {
+      "start": "node index"
+    },
+    "env": {
+      "NODE_ENV": "production"
+    }
+  }
+}
