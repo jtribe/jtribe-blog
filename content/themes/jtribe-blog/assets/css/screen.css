@@ -180,7 +180,7 @@ body {
     letter-spacing: 0.01rem;
     font-size: 1.5rem;
     line-height: 1.75em;
-    color: #4A4A4A;
+    color: black;
     -webkit-font-feature-settings: 'kern' 1;
     -moz-font-feature-settings: 'kern' 1;
     -o-font-feature-settings: 'kern' 1;
@@ -199,7 +199,7 @@ h4, h5, h6 {
     -webkit-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
     -moz-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
     -o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
-    color: #4A4A4A;
+    color: black;
     line-height: 1.15em;
     margin: 0 0 0.4em 0;
     font-family: "LubalinGraphStd-Demi", sans-serif;
@@ -483,7 +483,7 @@ margin on the iframe, cause it breaks stuff. */
 
 .main-nav,
 .no-cover.main-header {
-    background: #f5f8fa;
+    background: black;
     border-bottom: #EBF2F6 2px solid;
 }
 
@@ -491,7 +491,6 @@ margin on the iframe, cause it breaks stuff. */
     display: flex;
     position: relative;
     padding: 35px 40px;
-    background: #f5f8fa;
 }
 
 .main-nav a {
@@ -578,7 +577,6 @@ margin on the iframe, cause it breaks stuff. */
     height: 38px;
     padding: 0 15px 0 10px;
     border: transparent 1px solid;
-    color: #9EABB3;
     text-align: center;
     font-size: 12px;
     text-transform: uppercase;
@@ -604,7 +602,6 @@ margin on the iframe, cause it breaks stuff. */
     height: 38px;
     padding: 0 20px;
     border: transparent 1px solid;
-    color: #9EABB3;
     text-align: center;
     font-size: 12px;
     text-transform: uppercase;
@@ -619,6 +616,11 @@ margin on the iframe, cause it breaks stuff. */
     margin-right: 6px;
 }
 
+.back-button,
+.subscribe-button {
+    color: white;
+    line-height: 39px;
+}
 /* Special styles when overlaid on an image*/
 .main-nav.overlay {
     position: absolute;
@@ -657,8 +659,8 @@ margin on the iframe, cause it breaks stuff. */
 /* Add a border to the buttons on hover */
 .back-button:hover,
 .subscribe-button:hover {
-    border-color: #bfc8cd;
-    color: #9EABB3;
+    border-color: white;
+    color: white;
 }
 
 /* The details of your blog. Defined in ghost/settings/ */
@@ -1495,7 +1497,7 @@ body:not(.post-template) .post-title {
         height: 44px;
         line-height: 41px;
         border-radius: 0;
-        color: #2e2e2e;
+        color: white;
         background: transparent;
     }
     .back-button:hover,
