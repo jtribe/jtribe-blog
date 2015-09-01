@@ -36,12 +36,20 @@
   src: url("../fonts/286CB2_1_0.eot");
   src: url("../fonts/286CB2_1_0.eot?#iefix") format("embedded-opentype"), url("../fonts/286CB2_1_0.woff") format("woff"), url("../fonts/286CB2_1_0.ttf") format("truetype"); }
 
-.home-template .page-title,
+.home-template .page-title {
+  width: 350px;
+  margin: 0 auto;
+}
 .main-nav .logo {
   width: 240px;
   margin: 0 auto;
 }
 
+.home-template .page-title .logo,
+.main-nav .logo {
+  display: block;
+  border: none;
+}
 .home-template .page-title img,
 .main-nav .logo img {
   width: 100%;

@@ -9,10 +9,9 @@
 <header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
     <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
         <a class="back-button icon-arrow-left" href="{{@blog.url}}">Home</a>
-        <div class="logo">
-          <img src="/assets/images/logo.png">
+        <a class="logo" href="{{@blog.url}}"><img src="/assets/images/logo.png"></a>
           <div class='text hidden'>{{@blog.title}}</div>
-        </div>
+        </a>
         <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
     </nav>
 </header>
