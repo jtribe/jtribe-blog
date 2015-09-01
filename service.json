@@ -1,8 +1,8 @@
 {
-  "ghostrunner-blog": {
+  "jtribe-blog": {
     "description": "ghostrunner service",
     "scripts": {
-      "start": "node index"
+      "start": "node index.js"
     },
     "env": {
       "NODE_ENV": "production"

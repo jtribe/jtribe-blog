@@ -10,7 +10,7 @@ config = {
     // When running Ghost in the wild, use the production environment
     // Configure your URL and mail settings here
     production: {
-        url: 'http://blog.jtribe.com',
+        url: 'http://blog.jtribe.com.au',
         mail: {},
         database: {
             client: 'sqlite3',
@@ -25,6 +25,10 @@ config = {
             host: '0.0.0.0',
             // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
             port: '80'
+        },
+
+        paths: {
+            contentPath: path.join(__dirname, '/content/')
         }
     },
 
