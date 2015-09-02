@@ -11,7 +11,16 @@ config = {
     // Configure your URL and mail settings here
     production: {
         url: 'http://blog.jtribe.com.au',
-        mail: {},
+        mail: {
+            transport: 'SMTP',
+            options: {
+                service: 'Mailgun',
+                auth: {
+                    user: 'postmaster@sandbox75cc8e9819014d1bab28c6e2956e916d.mailgun.org',
+                    pass: '6d29176e83bbfcea8d9cfc16e267017b'
+                }
+            }
+        },
         database: {
             client: 'sqlite3',
             connection: {
@@ -24,7 +33,7 @@ config = {
             // Host to be passed to node's `net.Server#listen()`
             host: '0.0.0.0',
             // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
-            port: '80'
+            port: '2368'
         },
 
         paths: {
