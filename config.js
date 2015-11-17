@@ -17,7 +17,7 @@ config = {
                 service: 'Mailgun',
                 auth: {
                     user: 'postmaster@sandbox75cc8e9819014d1bab28c6e2956e916d.mailgun.org',
-                    pass: '6d29176e83bbfcea8d9cfc16e267017b'
+                    pass: '?[iIvTa}c8OT'
                 }
             }
         },
