@@ -49,7 +49,7 @@
             }
         }
 
-        var $img = $("img").on('load', updateImageWidth);
+        var $img = $("img:not(.no-full-img)").on('load', updateImageWidth);
         function casperFullImg() {
             $img.each(updateImageWidth);
         }
@@ -58,9 +58,10 @@
         $(window).smartresize(casperFullImg);
 
         $(".scroll-down").arctic_scroll();
-
+        $('.call-to-action')
+          .insertBefore($('.post-content').find('h1, h2, h3, h4, h5').first())
+          .show();
     });
-
     // smartresize
     jQuery.fn[sr] = function(fn) { return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
 
